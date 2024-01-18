@@ -1,0 +1,98 @@
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing : border-box;
+}
+
+body,html{
+    height: 100%;
+    width: 100%;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    background-color: purple;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main{
+    width: 45vh;
+    background-color: white;
+    border-radius: .75rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.main h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
+
+.inputText{
+    display: flex;
+    justify-content: space-between;
+    background: lightblue;
+    border-radius: 1rem;
+}
+.inputText input{
+    width: 100%;
+    font-size: 1rem;
+    padding: 1rem;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.inputText button{
+    padding: 1rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+    background-color: #023047;
+    border: none;
+    width: 8rem;
+    cursor: pointer;
+    color: white;
+    font-weight: bolder;
+    transition: .5s;
+}
+
+.tasks{
+    position: relative;
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.tasks p{
+    font-size: 1.2rem;
+}
+.tasks p i{
+    font-size: 1rem;
+    margin-right: .5rem;
+    cursor: pointer;
+    
+}
+.cross{
+    position: absolute;
+    right: 0;
+    border-radius: 50%;
+    padding: .2rem;
+    transition: .3s;
+}
+.cross:hover{
+    background-color: gray;
+}
+.hidden{
+    display: none;
+}
+
+button:hover{
+    background-color: skyblue;
+    color: black;
+}
